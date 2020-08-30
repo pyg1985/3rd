@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Window size="800,600" caption="0,0,0,32" mininfo="800,600">
+	<Font id="0" name="微软雅黑" size="13"/>
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scroll.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button1pushedimage=&quot;file='scroll.png' source='0,16,16,32' mask='#FFFF00FF'&quot; button1disabledimage=&quot;file='scroll.png' source='0,0,16,16' mask='#FFFF00FF'&quot; button2normalimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2hotimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; button2pushedimage=&quot;file='scroll.png' source='0,48,16,64' mask='#FFFF00FF'&quot; button2disabledimage=&quot;file='scroll.png' source='0,32,16,48' mask='#FFFF00FF'&quot; thumbnormalimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbhotimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbpushedimage=&quot;ffile='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; thumbdisabledimage=&quot;file='scroll.png' source='0,64,16,80' corner='2,2,2,2' mask='#FFFF00FF'&quot; railnormalimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railhotimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; railpushedimage=&quot;file='scroll.png' source='0,96,16,112' corner='2,2,2,2' mask='#FFFF00FF'&quot; raildisabledimage=&quot;file='scroll.png' source='0,80,16,96' corner='2,2,2,2' mask='#FFFF00FF'&quot; bknormalimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkhotimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkpushedimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; bkdisabledimage=&quot;file='scroll.png' source='0,128,16,146' corner='2,2,2,2' mask='#FFFF00FF'&quot; "/>
+	<VerticalLayout bkcolor="#FFF0F0F0" bkcolor2="#00A0A0A4" bordercolor="#00A0A0A4" bordersize="2">
+		<HorizontalLayout pos="0,0,0,32" padding="2,2,2,0" bkcolor="#FFC0C0C0" bordersize="1">
+			<HorizontalLayout pos="0,0,0,30" padding="3,0,0,0" bordersize="2">
+				<Text pos="14,6,132,22" float="true" text="测试Demo" font="0" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA"/>
+			</HorizontalLayout>
+			<HorizontalLayout pos="0,0,200,30" padding="0,0,2,0" bordersize="2">
+				<Button name="minbtn" pos="85,8,111,25" float="true" normalimage="file='sys_dlg_min.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_min.png' source='0,0,26,17'"/>
+				<Button name="maxbtn" pos="120,8,146,25" float="true" normalimage="file='sys_dlg_max.png' source='52,0,78,17'" hotimage="file='sys_dlg_max.png' source='26,0,52,18'" pushedimage="file='sys_dlg_max.png' source='0,0,26,17'"/>
+				<Button name="closebtn" pos="155,8,195,25" float="true" font="0" normalimage="file='sys_dlg_close.png' source='90,0,135,17'" hotimage="file='sys_dlg_close.png' source='45,0,90,17'" pushedimage="file='sys_dlg_close.png' source='0,0,45,17'"/>
+				<Button name="restorebtn" pos="120,8,146,25" float="true" visible="false" normalimage="file='sys_dlg_restore.png' source='52,0,78,17'" hotimage="file='sys_dlg_min.png' source='26,0,52,17'" pushedimage="file='sys_dlg_restore.png' source='0,0,26,17'"/>
+			</HorizontalLayout>
+		</HorizontalLayout>
+		<HorizontalLayout pos="0,0,0,400" bordersize="2">
+			<List name="gamelist" pos="0,0,0,400" padding="2,0,2,0" bordersize="2" vscrollbar="true" headerbkimage="list_header_bg.png" itembkcolor="#FFFFFFFF" itemselectedbkcolor="#FF808080" itemdisabledtextcolor="#FFA6CAF0">
+				<ListHeader pos="0,0,0,30" bkimage="list_header_bg.png" menu="true">
+					<ListHeaderItem name="ID" pos="0,0,200,30" bordersize="2" text="ID" sepwidth="1" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'"/>
+					<ListHeaderItem name="Name" pos="0,0,500,30" text="名称" sepwidth="1" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'"/>
+					<ListHeaderItem name="Status" pos="0,0,100,30" padding="0,0,2,0" bordersize="2" text="状态" sepwidth="1" hotimage="file='list_header_hot.png'" pushedimage="file='list_header_pushed.png'" sepimage="file='list_header_sep.png'"/>
+				</ListHeader>
+			</List>
+		</HorizontalLayout>
+	</VerticalLayout>
+	<CheckBox />
+</Window>
+
